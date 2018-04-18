@@ -1,0 +1,4 @@
+# To know your current workign directory
+
+Import os
+os.getcwd()
