@@ -1,0 +1,4 @@
+from os import path
+location1 = r"C:\USERS\Ghanshyam\India\Desktop\Ghanshyam"
+location2 = path.split(location1)
+print(location2)
