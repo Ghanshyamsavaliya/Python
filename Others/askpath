@@ -1,13 +1,18 @@
 from tkinter import *
+root = Tk()
+
 class abc:
     def path():
         global Ghanshyam
         string = Ghanshyam.get() 
         pathing = print ("r"+'"'+string+'"')
+        Ghanshyam.destroy()
+        root.destroy()
     
-root = Tk()
+root.geometry("500x500")
+root.iconbitmap('Global.ico')
 root.title('Name')
-Ghanshyam = Entry(root)
+Ghanshyam = Entry(root, bd=4)
 Ghanshyam.pack()
 Ghanshyam.focus_set()
 b = Button(root,text='okay',command=abc.path)
