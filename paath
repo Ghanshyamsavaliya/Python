@@ -1,0 +1,6 @@
+path = input("Please enter your file location?")
+if len(path)>5:
+    prodlevel = input("Please select level of product?")
+    geoglevel = input("Please select level of geography?")
+else:
+    print("Please enter correct path!")
