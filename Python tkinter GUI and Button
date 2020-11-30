@@ -1,0 +1,32 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Apr 10 15:00:57 2018
+
+@author: Ghanshyam Savaliya
+"""
+
+import tkinter as tk
+
+#widget
+w=tk.Tk()
+
+l=tk.Label(w,text="Hellow world")
+l.pack()
+
+f1=tk.Frame(w)
+f2=tk.Frame(w)
+
+f1.pack(side=tk.TOP)
+f2.pack(side=tk.BOTTOM)
+
+b1=tk.Button(f1,text="Import Data",foreground="blue")
+b2=tk.Button(f1,text="Export Data",foreground="Red")
+b3=tk.Button(f1,text="Write Data",activebackground="yellow")
+b4=tk.Button(f2,text="cancel",background="skyblue")
+
+b1.pack(side=tk.LEFT)
+b2.pack(side=tk.LEFT)
+b3.pack(side=tk.LEFT)
+b4.pack(side=tk.RIGHT)
+
+w.mainloop()
